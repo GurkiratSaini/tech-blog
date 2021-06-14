@@ -38,6 +38,14 @@ button:hover {
     background-color: red;
 }
 
+form > div {
+    margin-bottom: 2%;
+}
+
+form label {
+    display: block;
+}
+
 .container {
     width: 100%;
     min-height: 100%;
