@@ -56,6 +56,7 @@ router.get('/:id', (req, res) => {
 
 
 // create new user
+// add handling to automatically login after creating account
 router.post('/', (req, res) => {
     User.create(
         {
@@ -75,6 +76,11 @@ router.post('/', (req, res) => {
 
 // login route
 router.post('/login', (req, res) => {
+
+});
+
+// logout route
+router.post('/logout', (req, res) => {
 
 });
 
