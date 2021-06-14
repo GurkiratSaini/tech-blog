@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     if (req.session.loggedIn) {
         Post.findAll({
             where: {
-                id: req.session.user_id
+                user_id: req.session.user_id
             },
             include: [
                 {
