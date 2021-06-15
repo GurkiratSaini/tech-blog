@@ -2,7 +2,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  This is a blog website written in JavaScript using the MVC framework. This app was developed in Node.js with Express.js, Express-Handlebars, Sequelize, MySQL2, Dotenv, Express-Session, Connect-Session-Sequelize and BCrypt packages.
+  This is a blog website written in JavaScript using the MVC framework. This app was developed in Node.js with Express.js, Express-Handlebars, Sequelize, MySQL2, Dotenv, Express-Session, Connect-Session-Sequelize and BCrypt packages. The cookies are set to expire after 5 mins just for demonstartion purposes.
 
   ## Deployed App Links
   Heroku: https://vast-taiga-31419.herokuapp.com/ <br />
