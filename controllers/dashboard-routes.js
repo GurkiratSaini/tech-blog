@@ -14,13 +14,15 @@ router.get('/', (req, res) => {
                     include: {
                         model: User,
                         attributes: ['username']
-                    }
+                    },
+                    attributes: ['id', 'comment_content', 'post_id', 'user_id', 'created_at']
                 },
                 {
                     model: User,
                     attributes: ['username']
                 }
-            ]
+            ],
+            attributes: ['id', 'post_title', 'post_content', 'created_at']
         })
             .then(dbPostData => {
                 const posts = dbPostData.map(post => post.get({ plain: true }));
@@ -49,13 +51,15 @@ router.get('/edit/:id', (req, res) => {
                         include: {
                             model: User,
                             attributes: ['username']
-                        }
+                        },
+                        attributes: ['id', 'comment_content', 'post_id', 'user_id', 'created_at']
                     },
                     {
                         model: User,
                         attributes: ['username']
                     }
-                ]
+                ],
+                attributes: ['id', 'post_content', 'post_title', 'created_at']
             }
         )
             .then(dbPostData => {
